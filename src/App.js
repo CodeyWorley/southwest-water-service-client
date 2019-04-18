@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./components/nav";
-import LandingPage from "./components/landing-page";
-import DashboardPage from './components/dashboard-page';
-import DashboardLoginPage from './components/dashboard-login-page';
-import CustomerPage from './components/customer-page';
 
+import LandingPage from "./components/views/landing-page";
+import DashboardPage from './components/views/dashboard-page';
+import DashboardLoginPage from './components/views/dashboard-login-page';
+import ErrorPage from "./components/views/error-page";
+
+import Nav from "./components/nav";
 import Footer from "./components/footer";
-import ErrorPage from "./components/error-page";
+
 
 const App = () => {
     return (
@@ -17,10 +18,8 @@ const App = () => {
                 <Switch>
                     <Route exact path='/' component={LandingPage} />
 
-
                     <Route exact path='/dashboard' component={DashboardPage} />
                     <Route exact path='/dashboard/login' component={DashboardLoginPage} />
-                    <Route exact path='/dashboard/customer/:id' component={CustomerPage} />
 
                     <Route component={ErrorPage} />
                 </Switch>

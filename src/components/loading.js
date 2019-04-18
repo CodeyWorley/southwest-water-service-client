@@ -1,10 +1,9 @@
 import React from "react";
+import ReactSpinner from 'react-spinjs-new';
 
 const Loading = () => {
     return (
-        <div className='loading-container'>
-            Loading...
-        </div>
+        <ReactSpinner />
     );
 };
 

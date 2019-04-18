@@ -1,3 +1,7 @@
+/* Normalize */
+* {
+  list-style-type: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,8 +11,68 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* General */
+.error-msg {
+  text-align: center;
+}
+
+/* Nav */
+.nav-container {
+  display: flex;
+  padding: 21px 3%;
+  margin: 0;
+  background-color: #377def;
+  color: white;
+}
+.nav-container > li {
+  flex: 1;
+}
+.btn-logout {
+  float: right;
+}
+
+/* Footer */
+
+/* Dashboard */
+.dashboard-container {
+  margin: 3%;
+}
+
+/* Search */
+.search-container {
+
+}
+.search-input-field {
+  padding: 1%;
+}
+.customer-list {
+  padding: 0;
+}
+.customer-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1% 0;
+  margin: 0;
+}
+
+/* Login */
+.login-container {
+  margin: 3%;
+}
+.login-header {
+  text-align: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-input, .btn-login-submit {
+  margin: 1% 30%;
+  padding: 1%;
 }

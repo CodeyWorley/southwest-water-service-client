@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import { Route } from 'react-router-dom';
-import { API_BASE_URL } from '../config';
+import { API_BASE_URL } from '../../config';
 
 const DashboardLoginPage = props => {
     let token = localStorage.getItem('swwsToken');
@@ -40,7 +40,7 @@ const DashboardLoginPage = props => {
                         <div className='login-header'>
                             <h2 className='form-header'>Login</h2>
                         </div>
-                        {error}
+                        <div className='error-msg'>{error}</div>
                         <form
                             className='form login-form'
                             noValidate
